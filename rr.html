@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script>
+myImages=new Array();
+myImages[0]="image/p1.gif";
+myImages[1]="image/p2.gif";
+myImages[2]="image/p3.gif";
+myImages[3]="image/p4.gif";
+myImages[4]="image/p5.gif";
+myImages[5]="image/p6.gif";
+myImages[6]="image/p7.gif";
+myImages[7]="image/p8.gif";
+myImages[8]="image/p9.gif";
+myImages[9]="image/p10.gif";
+myImages[10]="image/p11.gif";
+myImages[11]="image/p12.gif";
+myImages[12]="image/p13.gif";
+myImages[13]="image/p14.gif";
+myImages[14]="image/p15.gif";
+myImages[15]="image/p16.gif";
+myImages[16]="image/p17.gif";
+myImages[17]="image/p18.gif";
+myImages[18]="image/p19.gif";
+myImages[19]="image/p20.gif";
+i=0;
+marks=0;
+result=new Array();
+result[0]=1;
+result[1]=4;
+result[2]=5;
+result[3]=3;
+result[4]=1;
+result[5]=6;
+result[6]=4;
+result[7]=3;
+result[8]=1;
+result[9]=2;
+result[10]=1;
+result[11]=5;
+result[12]=4;
+result[13]=3;
+result[14]=1;
+result[15]=4;
+result[16]=1;
+result[17]=2;
+result[18]=4;
+result[19]=4
+
+
+function next1()
+{
+if(result[i]==1)
+{
+marks=marks+10;
+}
+if(i>18)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+}
+else{
+i++;
+document.getElementById('imageviewer').src=myImages[i];
+	}
+}
+
+
+
+
+function nexta()
+{
+if(result[i]==2)
+{
+marks=marks+10;
+}
+if(i>18)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+}
+else{
+i++;
+document.getElementById('imageviewer').src=myImages[i];
+	}
+}
+
+
+
+function nextb()
+{
+if(result[i]==3)
+{
+marks=marks+10;
+}
+if(i>18)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+}
+else{
+i++;
+document.getElementById('imageviewer').src=myImages[i];
+	}
+}
+
+
+
+
+function nextc()
+{
+if(result[i]==4)
+{
+marks=marks+10;
+}
+if(i>18)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+}
+else{
+i++;
+document.getElementById('imageviewer').src=myImages[i];
+	}
+}
+
+
+
+
+function nextd()
+{
+if(result[i]==5)
+{
+marks=marks+10;
+}
+if(i>18)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+}
+else{
+i++;
+document.getElementById('imageviewer').src=myImages[i];
+	}
+}
+
+
+
+
+function nexte()
+{
+if(result[i]==6)
+{
+marks=marks+10;
+}
+if(i>18)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+}
+else{
+i++;
+document.getElementById('imageviewer').src=myImages[i];
+	}
+}
+
+
+
+
+var c=5;
+var t;
+var timer_is_on=0;
+
+function timedCount()
+{
+document.getElementById('boldStuff').innerHTML = ""+c;
+if(c==0)
+{
+document.getElementById("container1").innerHTML = "Your Total Marks is " +marks;
+i=0;
+document.getElementById('imageviewer').src=myImages[i];
+marks=0;
+c=5;clearTimeout(t);
+timer_is_on=0;
+}
+else{
+c=c-1;
+t=setTimeout("timedCount()",1000);}
+
+}
+
+function doTimer()
+{
+if (!timer_is_on)
+  {
+  timer_is_on=1;
+  timedCount();
+  }
+}
+
+ 
+</script>
+</head>
+
+<body>
+<div id="container">
+<img src="image/header.gif" width="901" height="140" />
+
+
+<p><b id='boldStuff'></b> </p> 
+ <input type='button' onclick='doTimer()' value='Start'/>
+<center>
+
+<img id="imageviewer" src="image/p1.gif" alt="picture" width="320" height="340" />
+<form>
+<input type="button" value="   1   " onclick="next1()">
+<input type="button" value="   2   " onclick="nexta()">
+<input type="button" value="   3   " onclick="nextb()">
+<input type="button" value="   4   " onclick="nextc()">
+<input type="button" value="   5   " onclick="nextd()">
+<input type="button" value="   6   " onclick="nexte()">
+</form>
+</center>
+</div>
+
+<div id="container1">
+
+
+</div>
+<div id="container2">
+<p>. . . . . . . . . . . . . . . . . . . CopyRight @Designed By CSE,RUET,09 . . . . . . . . . . . . . . . . . . . . . . .</p>
+
+</div>
+</body>
+</html>
+

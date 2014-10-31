@@ -1,0 +1,41 @@
+body{
+		font: 62.5%/2.2em Arial, Tahoma, Verdana,Helvetica, sans-serif;
+		color: #4b4942;
+		background: #404639 url(../image/bg_patterns.gif);
+	}
+	a{text-decoration: none;color: #5599a7;}
+	a:hover{color: #bb800f;}
+	.hide,hr{display: none;}
+	strong{font-weight: bold;}
+	#container{
+		width: 902px;
+		margin: 4px auto 0 auto;
+		background-color:green;
+		padding-bottom:10px;
+	}
+	#container1{
+	   font-size:30px;
+		width: 902px;
+		margin: 0px auto 0 auto;
+		background-color:green;
+		padding-bottom:10px;
+	}
+	#container2{
+	 font-size:20px;
+		width: 902px;
+		margin: 0px auto 0 auto;
+		background-color:green;
+		padding-bottom:0px;
+	}
+	
+	
+	#clk{
+		width: 902px;
+		margin: 4px auto 0 auto;
+		background-color:green;
+		padding-bottom:10px;
+		padding-left:10px;
+	}
+	
+	
+	
